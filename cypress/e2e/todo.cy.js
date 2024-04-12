@@ -26,6 +26,7 @@ it("Borrar tarea", () =>{
     cy.visit('https://todomvc.com/examples/react/dist/')
     cy.get('[data-testid="text-input"]').type("Tarea 5").type("{enter}")
     cy.get("button.destroy").click({force:true})
+    cy.get('body')
 })
 it("Filtrar tareas", () =>{
     cy.visit('https://todomvc.com/examples/react/dist/')
