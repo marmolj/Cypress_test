@@ -13,7 +13,7 @@ describe('template spec', () => {
     cy.get('#username').type("pedro")
     cy.get('#password').type("SuperSecretPassword!")
   })
-  it('testo invalido password', () => {
+  it('test invalido password', () => {
     cy.visit('https://the-internet.herokuapp.com/')
     cy.get(':nth-child(21) > a').click()
     cy.get('#username').type("pedro")
